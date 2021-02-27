@@ -22,11 +22,17 @@ h2 {
 .y-g-gradient {
   background: transparent linear-gradient(270deg, #39F49B 0%, #FFC213 51%, #FF7D50 100%) 0% 0% no-repeat padding-box; }
 
+.g-y-gradient {
+  background: transparent linear-gradient(90deg, #39F49B 0%, #FFC213 100%) 0% 0% no-repeat padding-box; }
+
 .unicorn-gradient {
   background: transparent linear-gradient(90deg, #23D5AB 0%, #23A6D5 32%, #E73C73 68%, #EE7752 100%) 0% 0% no-repeat padding-box; }
 
 .p-r-gradient {
   background: transparent linear-gradient(90deg, #6944FF 0%, #FF2846 100%) 0% 0% no-repeat padding-box; }
+
+.b-p-vertical-gradient {
+  background: transparent linear-gradient(180deg, #23D5AB 0%, #23A6D5 50%, #E73C73 100%) 0% 0% no-repeat padding-box; }
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -41,7 +47,8 @@ h2 {
   width: 100%;
   height: 100vh;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  background-image: url("/assets/img/Home/cover.jpg"); }
 
 .hero:before {
   content: "";
@@ -63,10 +70,10 @@ h2 {
   margin-bottom: -50px; }
 
 .avatar img {
-  min-width: 100px;
-  min-height: 100px;
-  max-width: 200px;
-  max-height: 200px;
+  width: 150px;
+  height: 150px;
+  max-width: 180px;
+  max-height: 180px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -99,18 +106,21 @@ h2 {
   margin-bottom: 54px; }
 
 .cards .card {
+  max-width: 328px;
   margin-top: 30px;
-  padding-right: 15px;
-  padding-left: 15px;
   border-color: transparent; }
 
 .cards .card .card-body {
   padding: 0; }
 
 .cards .card .card-body .card-title {
+  display: flex;
   margin: 0;
+  min-height: 60px;
   font-size: 23px;
   font-weight: bold;
+  align-items: center;
+  justify-content: center;
   text-align: center; }
 
 .cards .card .card-body .card-img {
@@ -130,44 +140,60 @@ h2 {
   min-height: 45px;
   padding: 10px 0; }
 
+/*-----------Footer-----------*/
+.footer {
+  text-align: center;
+  color: #FFFFFF;
+  padding: 22px 0;
+  font-size: 13px; }
+
+@media (min-width: 576px) {
+  .hero {
+    background-image: url("/assets/img/Home/cover2.jpg"); } }
 @media (min-width: 992px) {
   h1 {
     font-size: 50px; }
 
-  .hero .hero-text {
+  .hero {
+    background-image: url("/assets/img/Home/cover4.jpg"); }
+
+  .hero-text {
     font: italic normal normal 50px Lobster Two;
     font-size: 50px; }
 
+  .cards {
+    background: transparent linear-gradient(180deg, #23D5AB 0%, #23A6D5 50%, #E73C73 100%) 0% 0% no-repeat padding-box;
+    margin-bottom: 0px; }
+
   .cards .card {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    background: transparent;
     max-width: 230px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 0;
     border-color: transparent; }
 
   .cards .card .card-body .card-img {
     margin: 15px 0;
     border-radius: 15px;
-    opacity: 1; } }
+    opacity: 1; }
+
+  .footer {
+    font-size: 15px; } }
 @media (min-width: 1200px) {
   .avatar img {
-    min-width: 200px;
-    min-height: 200px; }
+    min-width: 180px;
+    min-height: 180px; }
 
   .cards .card {
     max-width: 255px; } }
-/*-----------Footer-----------*/
-.footer {
-  text-align: center;
-  color: #FFFFFF;
-  padding: 22px 0; }
-
 /*-----------subpages---------*/
 .hero-subpage {
   width: 100%;
   height: 50vh;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  background-image: url("/assets/img/Crypto/crypto.jpg"); }
 
 .hero-subpage:before {
   content: "";
@@ -184,35 +210,85 @@ h2 {
   height: 50vh;
   position: relative; }
 
-.hero-subpage h1 {
+.hero-subpage .hero-text {
+  margin-top: 10px; }
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  height: 60px; }
+
+.breadcrumbs p {
   margin: 0;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 64px;
-  color: #fff; }
+  color: white; }
 
-.hero-subpage h2 {
-  color: rgba(255, 255, 255, 0.9);
-  margin: 10px 0 0 0;
-  font-size: 24px; }
+.breadcrumbs p a {
+  text-decoration: underline;
+  color: white; }
 
-@media (min-width: 1024px) {
-  .hero-subpage {
-    background-attachment: fixed; } }
-@media (max-width: 768px) {
-  .hero-subpage {
-    height: auto; }
+.title-line {
+  width: 100%;
+  height: 4px;
+  display: inline-block;
+  background: #707070;
+  margin: 30px 0 15px 15px; }
 
-  .hero-subpage h1 {
-    font-size: 28px;
-    line-height: 36px; }
+.section-title {
+  font-weight: bold; }
 
-  .hero-subpage h2 {
-    font-size: 20px;
-    line-height: 24px; } }
 /******************* CHARITY PAGE *************************/
+/******************* TRADING PAGE *************************/
+.link {
+  margin-top: 20px;
+  min-height: 130px;
+  max-height: 130px;
+  max-height: 130px;
+  max-width: 130px;
+  background: transparent;
+  border: 3px solid #707070;
+  border-radius: 24px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.link-icon {
+  width: 50px;
+  height: 50px;
+  padding: 0 .5rem 0 .3rem;
+  text-align: center; }
+
+.link2 {
+  min-height: 130px;
+  max-height: 130px;
+  max-height: 130px;
+  max-width: 130px;
+  background: #FEC22D;
+  border: 2px solid #FFDF83;
+  border-radius: 65px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.link-icon2 {
+  width: 50px;
+  height: 50px;
+  padding: 0 .5rem 0 .3rem;
+  color: white;
+  text-align: center; }
+
+.meaning {
+  margin-top: 30px; }
+
+.meaning .cryptocurrencies {
+  margin-top: 15px;
+  text-align: center; }
+
+.meaning .cryptocurrencies h2 {
+  font-weight: bold; }
+
 /******************* DESIGN PAGE *************************/
 /******************* MODELING PAGE *************************/
-/******************* TRADING PAGE *************************/
 
 /*# sourceMappingURL=styles.css.map */
