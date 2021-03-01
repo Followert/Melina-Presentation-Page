@@ -35,6 +35,13 @@ h2{
 .b-p-vertical-gradient{
   background: transparent linear-gradient(180deg, #23D5AB 0%, #23A6D5 50%, #E73C73 100%) 0% 0% no-repeat padding-box;
 }
+.g-o-gradient{
+  background: transparent linear-gradient(90deg, #39F49B 0%, #FFC213 51%, #FF7D50 100%) 0% 0% no-repeat padding-box;
+}
+
+.b-r-gradient{
+  background: transparent linear-gradient(90deg, #6944FF 0%, #FF2846 100%) 0% 0% no-repeat padding-box;
+}
 
   /*--------------------------------------------------------------
   # Back to top button
@@ -261,6 +268,9 @@ opacity: 1;
 }
 .hero-subpage .hero-text{
   margin-top: 10px;
+  font-size: 22px;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
 }
 
  
@@ -296,13 +306,46 @@ opacity: 1;
   font-weight: bold;
 }
 
-
 /******************* CHARITY PAGE *************************/
+.better-place{
+  margin-top: 30px;
+}
+
+.better-place .text-container{
+  text-align: center;
+  border-left-width: 3px;
+  border-left-color: #707070;
+  border-left-style: solid;
+  padding-left: 15px;
+}
+
+.better-place h2{
+    font-size: 23px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+.better-place p{
+  text-align: left;
+  font-size: 16px;
+}
+
+
+
 
 //color de breacrumbd 
 /******************* TRADING PAGE *************************/
-.link{
+.my-links .links{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 0px;
+}
+
+
+.my-links .link{
   margin-top: 20px;
+  height: 130px;
+  width: 130px;
   min-height: 130px;
   max-height: 130px;
   max-height: 130px;
@@ -315,7 +358,7 @@ opacity: 1;
   align-items: center;
   justify-content: center;
 }
-.link-icon{
+.my-links .link-icon{
   width: 50px;
   height: 50px;
   padding: 0 .5rem 0 .3rem;
@@ -342,18 +385,130 @@ opacity: 1;
   color: white;
   text-align: center;
 }
-.meaning{
+
+.my-links .meaning{
   margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.meaning .cryptocurrencies{
+.my-links .meaning img{
+  max-width: 305px;
+  max-height: 400px;
+  
+}
+
+.my-links .meaning .cryptocurrencies{
   margin-top: 15px;
   text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 320px;
 }
 
-.meaning .cryptocurrencies h2{
+.my-links .meaning .cryptocurrencies h2{
   font-weight: bold;
 }
+
+
+
+//My-wallet
+.my-wallet .card{
+  width: 290px;
+  height: 490px;
+  border-width: 3px;
+  border-color: #FFC213;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.my-wallet .card-img-top{
+  padding: 20px 30px 0px 30px;
+  border-color: transparent;
+  width: 100%;
+  max-height: 230px;
+  
+}
+.my-wallet .card .card-body{
+  padding: 20px 20px 0px 20px;
+}
+.my-wallet .card .card-title{
+  font-size: 20px;
+  font-weight: bold;
+}
+.my-wallet .card .card-text{
+  font-size: 15px;
+  margin: 0;
+}
+
+.my-wallet .card .boton{
+  width: 160px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 18px;
+}
+
+@media(min-width:992px){
+  .my-links .meaning img{
+  width: 100%;
+  max-height: 400px;
+  }
+
+  .my-wallet .card{
+    margin-top: 35px;
+    margin-bottom: 50px;
+  }
+}
+@media(min-width:1200px){
+  
+  .my-wallet .card{
+    width: 390px;
+    height: 640px;
+    margin-bottom: 200px;
+  }
+  .my-wallet .card-img-top{
+    min-width: 290px;
+    min-height: 290px;
+    
+  }
+  .my-wallet .card .card-body{
+    padding: 20px 20px 0px 20px;
+  }
+  .my-wallet .card .card-title{
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .my-wallet .card .card-text{
+    font-size: 20px;
+    margin: 0;
+    text-align: start;
+  }
+  
+  .my-wallet .card .boton{
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: 576px){
+  .my-links .links{
+    justify-content: start;
+  }
+  
+  
+  .my-links .link{
+    margin-right: 15px;
+  }
+}
+
 /******************* DESIGN PAGE *************************/
 
 
