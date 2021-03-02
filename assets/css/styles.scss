@@ -29,6 +29,9 @@ h2{
 .unicorn-gradient{
   background: transparent linear-gradient(90deg, #23D5AB 0%, #23A6D5 32%, #E73C73 68%, #EE7752 100%) 0% 0% no-repeat padding-box;
 }
+.g-p-unicorn-gradient{
+  background: transparent linear-gradient(90deg, #23D5AB 0%, #23A6D5 32%, #E73C73 68%, #EE7752 100%) 0% 0% no-repeat padding-box;
+}
 .p-r-gradient{
   background: transparent linear-gradient(90deg, #6944FF 0%, #FF2846 100%) 0% 0% no-repeat padding-box;
 }
@@ -43,6 +46,9 @@ h2{
   background: transparent linear-gradient(90deg, #6944FF 0%, #FF2846 100%) 0% 0% no-repeat padding-box;
 }
 
+.o-p-gradient{
+  background: transparent linear-gradient(90deg, #FF7D50 0%, #F43636 51%, #ED63D2 100%) 0% 0% no-repeat padding-box;
+}
   /*--------------------------------------------------------------
   # Back to top button
   --------------------------------------------------------------*/
@@ -307,17 +313,25 @@ opacity: 1;
 }
 
 /******************* CHARITY PAGE *************************/
+.charity{
+  background-image: url('/assets/img/Charity/sm-black.jpg');
+}
+
+.charity .hero-text{
+  font-size: 16px;
+}
 .better-place{
   margin-top: 30px;
 }
 
 .better-place .text-container{
   text-align: center;
+  padding-left: 15px;
   border-left-width: 3px;
   border-left-color: #707070;
   border-left-style: solid;
-  padding-left: 15px;
 }
+
 
 .better-place h2{
     font-size: 23px;
@@ -330,11 +344,119 @@ opacity: 1;
   font-size: 16px;
 }
 
+.social .social-block{
+  min-height: 260px;
+}
+
+.social .social-img{
+  max-width: 150px;
+  max-height: 150px;
+  border: 0px solid;
+  border-radius: 50%;
+}
+.social .img-centro{
+  border: 0px solid;
+  border-radius: 50%;
+
+}
+.social h3{
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.social p{
+  font-size: 15px;
+}
 
 
+.final-text{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.final-text .text-container{
+  text-align: center;
+  border-left-width: 3px;
+  border-left-color: #707070;
+  border-left-style: solid;
+  padding-left: 15px;
+}
+
+.final-text p{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  font-size: 16px;
+}
+
+
+//Media qry
+
+@media(min-width:576px){
+  
+}
+@media(min-width:768px){
+  .better-place h2{
+    text-align: start;
+  }
+  .better-place p{
+    text-align: left;
+    font-size: 21px;
+  }
+
+
+  .social .social-block{
+    min-height: 300px;
+  }
+  
+  .social h3{
+    font-size: 22px;
+  }
+  
+  .social p{
+    font-size: 17.9px;
+  }
+  
+}
+@media(min-width:992px){
+  .charity{
+    background-image: url(/assets/img/Charity/lg-black.jpg);
+  }
+  .charity .hero-text{
+    font-size: 22px;
+  }
+
+  .better-place p{
+    text-align: left;
+    font-size: 21px;
+  }
+
+
+  
+  .social h3{
+    font-size: 22px;
+  }
+  
+  .social p{
+    font-size: 17.9px;
+  }
+}
+
+@media(min-width:1200px){
+  .social .social-block{
+    min-height: 320px;
+  }
+}
 
 //color de breacrumbd 
 /******************* TRADING PAGE *************************/
+.my-links .links{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 0px;
+}
+
 .my-links .links{
   display: flex;
   justify-content: space-around;
