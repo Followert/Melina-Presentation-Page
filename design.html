@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     
     <!-- Vendor CSS Files -->
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Personal CSS-->
     <link href="assets/css/styles.css" rel="stylesheet">
@@ -42,133 +43,99 @@
         </section>
         <!-- End Breadcrumbs -->
 
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
 
-        <section class="mh-portafolio" id="mh-portafolio">
-          <div class="container">
-            <div class="row">
-              <h3>Recent Portfolio</h3>
-            </div>
-            <br><br><br><br>
-            <div class="part col-sm-12">
-              <div class="portfolio-nav col-sm-12" id="filter-button">
-                <ul>
-                  <li data-filter="*" class="current">
-                    <span>All Categories</span>
-                  </li>
-                  <li data-filter=".user-interface" >
-                    <span>Web Design</span>
-                  </li>
-                  <li data-filter=".branding" >
-                    <span>Branding</span>
-                  </li>
-                  <li data-filter=".mockup" >
-                    <span>Mockups</span>
-                  </li>
-                  <li data-filter=".ui">
-                    <span>Ui</span>
-                  </li>
-                </ul>
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Check our Portfolio</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/Crypto/bitcoin.jpg" class="img-fluid w-100" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
               </div>
-              
-              <div class="mh-project-gallery col-sm-12" id="project-gallery">
-                <div class="portfolioContainer row">
-                  <div class="grid-item col-md-4 user-interface">
-                    <figure>
-                      <img src="/assets/img/Crypto/meme.jpg" alt="item">
-                      <figcaption class="fig-caption">
-                        <i class="fa fa-search"></i>
-                        <h5 class="title">Creative Design</h5>
-                        <span class="sub-title">Photography</span>
-                      </figcaption>
-                    </figure>
-                  </div>
-
-                  
-                  <div class="grid-item col-md-4 ui mockup">
-                    <figure>
-                      <img src="/assets/img/Charity/twitter.jpg" alt="item">
-                      <figcaption class="fig-caption">
-                        <i class="fa fa-search"></i>
-                        <h5 class="title">Creative Design</h5>
-                        <span class="sub-title">Photography</span>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  
-                  <div class="grid-item col-md-4 user-interface">
-                    <figure>
-                      <img src="/assets/img/Crypto/sm-melina.jpg" alt="item">
-                      <figcaption class="fig-caption">
-                        <i class="fa fa-search"></i>
-                        <h5 class="title">Creative Design</h5>
-                        <span class="sub-title">Photography</span>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  
-                  <div class="grid-item col-md-4 branding">
-                    <figure>
-                      <img src="/assets/img/Crypto/meme.jpg" alt="item">
-                      <figcaption class="fig-caption">
-                        <i class="fa fa-search"></i>
-                        <h5 class="title">Creative Design</h5>
-                        <span class="sub-title">Photography</span>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  
-                  <div class="grid-item col-md-4 user-interface">
-                    <figure>
-                      <img src="/assets/img/Charity/instagram.jpg" alt="item">
-                      <figcaption class="fig-caption">
-                        <i class="fa fa-search"></i>
-                        <h5 class="title">Creative Design</h5>
-                        <span class="sub-title">Photography</span>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  
-                  <div class="grid-item col-md-4 branding">
-                    <figure>
-                      <img src="/assets/img/Charity/instagram.jpg" alt="item">
-                      <figcaption class="fig-caption">
-                        <i class="fa fa-search"></i>
-                        <h5 class="title">Creative Design</h5>
-                        <span class="sub-title">Photography</span>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  
-                  <div class="grid-item col-md-4 ui">
-                    <figure>
-                      <img src="/assets/img/Charity/lg-black.jpg" alt="item">
-                      <figcaption class="fig-caption">
-                        <i class="fa fa-search"></i>
-                        <h5 class="title">Creative Design</h5>
-                        <span class="sub-title">Photography</span>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  
-                  <div class="grid-item col-md-4 branding">
-                    <figure>
-                      <img src="/assets/img/Charity/lg-black.jpg" alt="item">
-                      <figcaption class="fig-caption">
-                        <i class="fa fa-search"></i>
-                        <h5 class="title">Creative Design</h5>
-                        <span class="sub-title">Photography</span>
-                      </figcaption>
-                    </figure>
-                  </div>
-
-
-
-                </div>
-              </div>
-
             </div>
           </div>
-        </section>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/Crypto/lg-meme.jpg" class="img-fluid w-100" alt="">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/Crypto/lg-melina.jpg" class="img-fluid w-100" alt="">
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/Home/modelling.jpg" class="img-fluid w-100" alt="">
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/Home/SubCover.jpg" class="img-fluid w-100" alt="">
+              <div class="portfolio-info">
+                <h4>Charity</h4>
+                <p>Charity</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/Home/charity.jpg" class="img-fluid w-100" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/Home/charity.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
     </main>
     <footer class="footer g-p-unicorn-gradient">
       2021 © Copyright, Melina Shakur <br> “Modeling Art & Cosplay” Todos los derechos reservados.
@@ -176,12 +143,13 @@
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
       <!-- Optional JavaScript; choose one of the two! -->
-      <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
       <script src="assets/vendor/jquery/jquery.min.js"></script>
       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/venobox/venobox.min.js"></script>
+      <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    
         <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     </body>
