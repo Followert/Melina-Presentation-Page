@@ -68,7 +68,7 @@ h2{
     height: 100vh;
     background-size: cover;
     position: relative;
-    background-image: url('/assets/img/Home/cover.jpg')
+    background-image: url('../img/Home/cover.jpg')
 }
   
 .hero:before  {
@@ -186,7 +186,7 @@ opacity: 1;
 
 @media (min-width: 576px){
   .hero{
-    background-image: url('/assets/img/Home/cover2.jpg')
+    background-image: url('../img/Home/cover2.jpg')
 
   }
 }
@@ -201,7 +201,7 @@ opacity: 1;
   }
 
   .hero{
-    background-image: url('/assets/img/Home/cover4.jpg')
+    background-image: url('../img/Home/cover4.jpg')
 
   }
 
@@ -253,7 +253,7 @@ opacity: 1;
   height: 50vh;
   background-size: cover;
   position: relative;
-  background-image: url('/assets/img/Crypto/crypto.jpg')
+  background-image: url('../img/Crypto/crypto.jpg')
 }
 
 .hero-subpage:before {
@@ -354,6 +354,11 @@ opacity: 1;
   overflow: hidden;
   z-index: 1;
   background: rgba(21, 21, 21, 0.6);
+  
+}
+
+.portfolio .portfolio-wrap img{
+  border-radius: 15px;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -436,7 +441,7 @@ opacity: 1;
 
 /******************* CHARITY PAGE *************************/
 .charity{
-  background-image: url('/assets/img/Charity/sm-black.jpg');
+  background-image: url('../img/Charity/sm-black.jpg');
 }
 
 .charity .hero-text{
@@ -543,7 +548,7 @@ opacity: 1;
 }
 @media(min-width:992px){
   .charity{
-    background-image: url(/assets/img/Charity/lg-black.jpg);
+    background-image: url(../img/Charity/lg-black.jpg);
   }
   .charity .hero-text{
     font-size: 22px;
