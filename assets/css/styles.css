@@ -630,5 +630,18 @@ h2 {
     margin-bottom: 18px; } }
 /******************* DESIGN PAGE *************************/
 /******************* MODELING PAGE *************************/
+/******************* CHARITY PAGE *************************/
+.modeling {
+  background-image: url("../img/Modeling/Cosplay-sm.jpg"); }
+
+.modeling .hero-text {
+  font-size: 16px; }
+
+@media (min-width: 992px) {
+  .modeling {
+    background-image: url(../img/Modeling/Cosplay-lg.jpg); }
+
+  .modeling .hero-text {
+    font-size: 22px; } }
 
 /*# sourceMappingURL=styles.css.map */
