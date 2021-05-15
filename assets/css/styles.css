@@ -630,7 +630,6 @@ h2 {
     margin-bottom: 18px; } }
 /******************* DESIGN PAGE *************************/
 /******************* MODELING PAGE *************************/
-/******************* CHARITY PAGE *************************/
 .modeling {
   background-image: url("../img/Modeling/Cosplay-sm.jpg"); }
 
@@ -642,6 +641,32 @@ h2 {
     background-image: url(../img/Modeling/Cosplay-lg.jpg); }
 
   .modeling .hero-text {
+    font-size: 22px; } }
+/******************* trading PAGE *************************/
+.trading {
+  background-image: url("../img/Crypto/crypto.jpg"); }
+
+.trading .hero-text {
+  font-size: 16px; }
+
+@media (min-width: 992px) {
+  .trading {
+    background-image: url(../img/Achitecture/arqui-sm.jpg); }
+
+  .trading .hero-text {
+    font-size: 22px; } }
+/******************* design PAGE *************************/
+.design {
+  background-image: url("../img/Achitecture/arqui-lg.jpg"); }
+
+.design .hero-text {
+  font-size: 16px; }
+
+@media (min-width: 992px) {
+  .trading {
+    background-image: url(../img/Crypto/Cryptocurrency-Bitcoin-Blockchian-Dice-1@2x.jpg); }
+
+  .trading .hero-text {
     font-size: 22px; } }
 
 /*# sourceMappingURL=styles.css.map */
